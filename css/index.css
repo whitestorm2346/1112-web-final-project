@@ -6,3 +6,131 @@
     margin: 0;
     padding: 0;
 }
+
+/*
+==========================
+NAV-BAR PART
+==========================
+*/
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    background-color: rgb(255, 226, 238);
+}
+
+.logo {
+    height: 90%;
+    margin: auto 1rem;
+}
+
+.logo img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links li {
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-links li:hover {
+    border-bottom: .25rem solid #ffc6c6;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+#open-menu,
+#close-menu {
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: #ff7b7b;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: all .3s linear;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d84784;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #ff8ebd;
+}
+
+.hide-btn {
+    display: none;
+}
+
+.show-menu {
+    transform: translateX(0);
+}
+
+@media screen and (min-width: 768px) { 
+    .nav-links {
+        margin: auto 1rem;
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    #open-menu {
+        display: none;
+    }
+}
+
+/*
+==========================
+HEADER PART
+==========================
+*/
+
+header {
+    height: calc(100vh - 4.5rem);
+    background-color: rgb(255, 244, 247);
+}
+
+/*
+==========================
+MAIN SECTION PART
+==========================
+*/
+
+/*
+==========================
+FOOTER PART
+==========================
+*/
+
+footer {
+    height: 20vh;
+    background-color: rgb(255, 209, 234);
+}

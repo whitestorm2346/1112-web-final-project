@@ -1,30 +1,15 @@
-const navBtn1 = document.querySelector('#nav-btn-1');
-const navBtn2 = document.querySelector('#nav-btn-2');
-const closeBtn1 = document.querySelector('#close-btn-1');
-const closeBtn2 = document.querySelector('#close-btn-2');
-const menu1 = document.querySelector('#menu-1');
-const menu2 = document.querySelector('#menu-2');
+const open_menu_btn = document.querySelector('#open-menu');
+const close_menu_btn = document.querySelector('#close-menu');
+const menu = document.querySelector('#menu');
 
-navBtn1.addEventListener('click', () => {
-    menu1.classList.add('show-menu');
-    closeBtn1.classList.remove('hide-btn');
-    navBtn1.classList.add('hide-btn');
+open_menu_btn.addEventListener('click', () => {
+    menu.classList.add('show-menu');
+    close_menu_btn.classList.remove('hide-btn');
+    open_menu_btn.classList.add('hide-btn');
 });
 
-closeBtn1.addEventListener('click', () => {
-    menu1.classList.remove('show-menu');
-    navBtn1.classList.remove('hide-btn');
-    closeBtn1.classList.add('hide-btn');
-});
-
-navBtn2.addEventListener('click', () => {
-    menu2.classList.add('show-menu');
-    closeBtn2.classList.remove('hide-btn');
-    navBtn2.classList.add('hide-btn');
-});
-
-closeBtn2.addEventListener('click', () => {
-    menu2.classList.remove('show-menu');
-    navBtn2.classList.remove('hide-btn');
-    closeBtn2.classList.add('hide-btn');
+close_menu_btn.addEventListener('click', () => {
+    menu.classList.remove('show-menu');
+    open_menu_btn.classList.remove('hide-btn');
+    close_menu_btn.classList.add('hide-btn');
 });
