@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/index.css" />
+    <script src="/js/frame.js"></script>
     <title>Final Web Project</title>
   </head>
 
@@ -26,12 +27,10 @@
       </div>
 
       <ul class="nav-links">
-        <li><a href="#">home</a></li>
-        <li><a href="#">about TKU</a></li>
-        <li><a href="#">teachers</a></li>
-        <li><a href="#">link4</a></li>
-        <li><a href="#">link5</a></li>
-        <li><a href="#">contact</a></li>
+        <li onclick="show_page(1)"><a href="#">home</a></li>
+        <li onclick="show_page(2)"><a href="#">about TKU</a></li>
+        <li onclick="show_page(3)"><a href="#">teachers</a></li>
+        <li onclick="show_page(4)"><a href="#">contact</a></li>
       </ul>
 
       <div class="btn" id="open-menu">
@@ -44,16 +43,16 @@
 
     <div class="menu" id="menu">
       <ul class="menu-links">
-        <li><a href="#">home</a></li>
-        <li><a href="#">about TKU</a></li>
-        <li><a href="#">teachers</a></li>
-        <li><a href="#">link4</a></li>
-        <li><a href="#">link5</a></li>
-        <li><a href="#">contact</a></li>
+        <li onclick="show_page(1)"><a href="#">home</a></li>
+        <li onclick="show_page(2)"><a href="#">about TKU</a></li>
+        <li onclick="show_page(3)"><a href="#">teachers</a></li>
+        <li onclick="show_page(4)"><a href="#">contact</a></li>
       </ul>
     </div>
 
-    <header></header>
+    <section class="main-frame">
+      <iframe src="/home.html" frameborder="0"></iframe>
+    </section>
 
     <footer>
       <ul class="social-icon">
@@ -92,6 +91,6 @@
     </footer>
 
     <script src="/js/menu.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="/js/frame.js"></script>
   </body>
 </html>
