@@ -1,26 +1,43 @@
+section {
+    margin: 0 1rem;
+}
+
 .view {
     display: flex;
-    width: 85%;
-    margin: 1rem auto;
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
 }
 
 .item {
-    height: fit-content;
+    height: 100%;
 }
 
 .item img {
-    height: 90%;
+    width: 80%;
+    margin: 0 auto;
     object-fit: cover;
     transition: all linear .4s;
 }
 
 .slick-slide {
-    margin: 10px;
-    /* 圖片與圖片的間隔大小 */
+    /* height: 100%; */
 }
 
 .slick-slide img {
-    width: 100%;
-    /* border: 2px solid #fff; */
-    /* 圖片的邊框大小 */
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    padding-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.intro article p {
+    text-indent: 2em;
+}
+
+.school-list li {
+    list-style-type: none;
 }
