@@ -1,6 +1,5 @@
-const triggerEventInMainPage = () => {
-    console.log('onclicked')
-    window.parent.show_page(2);
-    console.log('check point')
+const switchToAboutPage = () => {
+    window.parent.postMessage('switchToAboutPage', '*');
+    console.log('post msg')
 }
 

@@ -6,11 +6,11 @@
 
 期末報告分為 報告 10% + 作品 40%
 
-繳交期限:6/14(三) 23:59 截止
+繳交期限: `6/14(三) 23:59 截止`
 
-繳交方式:154550@o365.tku.edu.tw
+繳交方式: `154550@o365.tku.edu.tw`
 
-請將檔案壓縮 檔名: 學號 _ 班別 _ 姓名.rar
+請將檔案壓縮 檔名: `學號_班別_姓名.rar`
 
 #### 報告 10% (可用 Word 或 PPT 製作)內容包含:
 
@@ -28,6 +28,13 @@ HTML 標籤(5%)
 CSS(5%) 配色請勿用太強烈的顏色,確保知道使用的屬性效果
 
 Javascript(15%) 至少使用三種事件,每一種 5%
+
+> `open_menu_btn.addEventListener`
+> `close_menu_btn.addEventListener`
+
+> `show_page()`
+
+> `switchToAboutPage()`
 
 排版設計(5%) 基本佈局要出現
 

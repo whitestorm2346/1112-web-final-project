@@ -4,10 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css" />
     <link rel="stylesheet" href="/css/about.css" />
     <title>About TKU</title>
   </head>
   <body>
-    <h1>about</h1>
+    <section class="view autoplay">
+      <div class="item">
+        <img src="../img/indexImg1.png" alt="img1" />
+      </div>
+      <div class="item">
+        <img src="../img/indexImg2.png" alt="img2" />
+      </div>
+      <div class="item">
+        <img src="../img/indexImg3.png" alt="img3" />
+      </div>
+      <div class="item">
+        <img src="../img/indexImg4.png" alt="img4" />
+      </div>
+    </section>
+    <section class="intro"></section>
+    <section class="location"></section>
+
+    <!-- SCRIPT SECTION -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".autoplay").slick({
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          centerMode: true,
+          centerPadding: "0",
+        });
+      });
+    </script>
   </body>
 </html>

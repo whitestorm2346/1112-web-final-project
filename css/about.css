@@ -1,0 +1,26 @@
+.view {
+    display: flex;
+    width: 85%;
+    margin: 1rem auto;
+}
+
+.item {
+    height: fit-content;
+}
+
+.item img {
+    height: 90%;
+    object-fit: cover;
+    transition: all linear .4s;
+}
+
+.slick-slide {
+    margin: 10px;
+    /* 圖片與圖片的間隔大小 */
+}
+
+.slick-slide img {
+    width: 100%;
+    /* border: 2px solid #fff; */
+    /* 圖片的邊框大小 */
+}
