@@ -8,6 +8,30 @@
 
 .teacher-list li {
     list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.teacher-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.teacher-info {
+    padding: 0;
+    margin-right: 2rem;
+}
+
+.teacher-name {
+    font-size: 1.75rem;
+}
+
+.teacher-info li {
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.teacher-info li i {
+    margin-right: .5rem;
 }
 
 @media screen and (min-width: 768px) {
