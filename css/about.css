@@ -30,14 +30,73 @@ section {
 }
 
 .title {
-    padding-top: 2rem;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+    width: fit-content;
+    padding: 0 .5rem;
     font-size: 2.5rem;
+    border-bottom: 5px solid #000;
 }
 
 .intro article p {
     text-indent: 2em;
 }
 
+.school-list {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
 .school-list li {
     list-style-type: none;
+}
+
+.school-name {
+    width: fit-content;
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+    border-bottom: 3px solid #000;
+}
+
+.school-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+}
+
+.school-intro {
+    text-indent: 2em;
+    line-height: 1.5rem;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map iframe {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .title {
+        margin-left: 0;
+        padding: 0 1rem 0 0;
+    }
+
+    .school-info {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .school-intro {
+        margin-right: 1.5rem;
+    }
+
+    #Cyber .school-info {
+        grid-template-columns: 1fr;
+    }
 }
