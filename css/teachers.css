@@ -1,0 +1,17 @@
+.teachers-intro {
+    margin: 0 1.5rem;
+}
+
+.teacher-list {
+    padding: 0;
+}
+
+.teacher-list li {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+    .teacher-list {
+        padding-left: 40px;
+    }
+}
