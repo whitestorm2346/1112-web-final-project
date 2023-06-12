@@ -1,0 +1,144 @@
+.title {
+    text-align: center;
+}
+
+.designer-info {
+    width: fit-content;
+    margin: 1.5rem auto;
+    padding-right: 2.5rem;
+    line-height: 2rem;
+}
+
+.designer-info li {
+    list-style-type: none;
+    font-size: 1.25rem;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.icons {
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 60%;
+    border-radius: 15px;
+    transition: all .2s linear;
+}
+
+.icons a {
+    text-decoration: none;
+    color: black;
+}
+
+.icons:hover {
+    background-color: rgb(246, 175, 233);
+}
+
+.icons:hover i {
+    color: #fff;
+}
+
+.icons:hover p {
+    color: #fff;
+}
+
+.icons:hover a {
+    color: #fff;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    color: rgb(246, 175, 233);
+}
+
+.icons h3 {
+    text-transform: capitalize;
+}
+
+form {
+    flex: 1 1 55rem;
+    background: #fff;
+    padding: 0 2rem;
+    border-radius: 0.5rem;
+}
+
+form .box {
+    width: 100%;
+    border-bottom: 1px solid #333;
+    color: #333;
+    text-transform: none;
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+form .box:focus {
+    border-color: rgb(246, 175, 233);
+}
+
+form .box::placeholder {
+    text-transform: capitalize;
+}
+
+form textarea {
+    height: 20rem;
+    width: 100%;
+    resize: none;
+    border-bottom: 0.1rem solid #333;
+    color: #333;
+    text-transform: none;
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+form textarea:focus {
+    border-color: rgb(246, 175, 233);
+}
+
+form textarea::placeholder {
+    text-transform: capitalize;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 3rem;
+    background: rgb(246, 175, 233);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  .btn:hover {
+    background: #111;
+  }
+
+form .btn {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        text-align: left;
+    }
+
+    .designer-info {
+        width: 100%;
+        margin-left: 2rem;
+        padding: 0;
+    }
+
+    .contacts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .icons {
+        padding: 1rem 2rem;
+    }
+}

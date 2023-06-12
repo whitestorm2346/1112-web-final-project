@@ -15,6 +15,63 @@
     <title>Contact Me</title>
   </head>
   <body>
-    <h1>contact</h1>
+    <h1 class="title">開發人員資訊</h1>
+    <ul class="designer-info">
+      <li>姓名：游昃勛</li>
+      <li>學號：410411218</li>
+      <li>系級：資工二A</li>
+    </ul>
+
+    <section class="contacts">
+      <div class="icons">
+        <i class="fas fa-envelope"></i>
+        <h3>my email</h3>
+        <p>andrew770426@gmail.com</p>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-phone"></i>
+        <h3>my number</h3>
+        <p>09XX000XXX</p>
+      </div>
+
+      <div class="icons">
+        <i class="fab fa-instagram"></i>
+        <h3>my instagram</h3>
+        <p><a href="https://www.instagram.com/tsehsun2346/">@tsehsun2346</a></p>
+      </div>
+    </section>
+
+    <form id="mailer" onsubmit="sendEmail(); reset(); return false;">
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your Name"
+        required
+        class="box"
+      />
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Email ID"
+        required
+        class="box"
+      />
+
+      <textarea
+        name="body"
+        placeholder="How can we help you?"
+        id="body"
+        cols="30"
+        rows="10"
+      ></textarea>
+
+      <input type="submit" class="btn" value="send message" />
+    </form>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/js/mailer.js"></script>
   </body>
 </html>
