@@ -9,11 +9,12 @@
 .teacher-list li {
     list-style-type: none;
     margin-bottom: 1rem;
+    background-color: #fffafd;
 }
 
 .teacher-intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: .5rem 2rem;
+    display: flex;
 }
 
 .teacher-info {
@@ -32,6 +33,18 @@
 
 .teacher-info li i {
     margin-right: .5rem;
+}
+
+.teacher-img {
+    height: 12rem;
+    margin: auto 0;
+    border-radius: 50rem;
+}
+
+.reason-of-choosing {
+    padding: 1rem;
+    text-indent: 2em;
+    font-size: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
