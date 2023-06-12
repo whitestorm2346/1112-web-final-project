@@ -15,14 +15,15 @@
 .teacher-intro {
     padding: .5rem 2rem;
     display: flex;
+    flex-direction: column-reverse;
 }
 
 .teacher-info {
     padding: 0;
-    margin-right: 2rem;
 }
 
 .teacher-name {
+    text-align: center;
     font-size: 1.75rem;
 }
 
@@ -36,8 +37,8 @@
 }
 
 .teacher-img {
-    height: 12rem;
-    margin: auto 0;
+    width: 30%;
+    margin: 0 auto;
     border-radius: 50rem;
 }
 
@@ -48,7 +49,27 @@
 }
 
 @media screen and (min-width: 768px) {
+    .teacher-intro {
+        flex-direction: row;
+    }
+
     .teacher-list {
         padding-left: 40px;
+    }
+
+    .teacher-info {
+        padding: 0;
+        margin-right: 2rem;
+    }
+
+    .teacher-name {
+        text-align: left;
+    }
+
+    .teacher-img {
+        width: auto;
+        height: 12rem;
+        margin: auto 0;
+        border-radius: 50rem;
     }
 }
